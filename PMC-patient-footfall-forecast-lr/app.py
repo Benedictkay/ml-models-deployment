@@ -3,6 +3,9 @@ import pandas as pd
 import numpy as np
 import joblib
 
+# Get the directory where app.py is located
+curr_dir = Path(__file__).parent
+
 model = joblib.load("ridge_patient_footfall_model.pkl")
 scaler = joblib.load("ridge_scaler.pkl")
 model_features = joblib.load("model_features.pkl")
