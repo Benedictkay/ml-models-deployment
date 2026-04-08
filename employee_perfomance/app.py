@@ -9,8 +9,8 @@ import joblib
 
 # 2. LOAD SAVED OBJECTS
 
-scaler = joblib.load('employee_performance/scaler.pkl')
-model = joblib.load('employee_performance/final_employee_model.pkl')
+scaler = joblib.load('scaler.pkl')
+model = joblib.load('final_employee_model.pkl')
 
 st.set_page_config(page_title="Employee Performance Predictor", layout="centered")
 
